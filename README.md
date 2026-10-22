@@ -28,20 +28,45 @@ This repository contains the backend server for the Wanderlust travel destinatio
    cd wanderlust-server
    ```
 
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/JannatJimu/wanderlust-server.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd wanderlust-server
+   ```
+
 3. Install dependencies:
    ```bash
    npm install
    ```
 
-4. Create a `.env` file and configure the required environment variables.
+4. Create a `.env` file in the project root and configure the required environment variables.
 
-5. Start the server:
+5. Start the development server:
    ```bash
-   npm start
+   nodemon index.js
    ```
 
 ## Environment Variables
 
-Configure the MongoDB connection string, port, and frontend URL in your environment file.
+Create a `.env` file and configure the following variables according to your project setup:
 
-**Note:** Never commit `.env` files or database credentials to GitHub.
+```env
+PORT=5000
+CLIENT_URL=http://localhost:3000
+MONGODB_URI=your_mongodb_connection_string
+```
+
+- `PORT`: The port on which the backend server runs.
+- `CLIENT_URL`: The frontend application's URL.
+- `MONGODB_URI`: Your MongoDB connection string.
+
+
+
+
+
